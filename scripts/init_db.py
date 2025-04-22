@@ -91,3 +91,7 @@ INSERT INTO course_instructors (course_id, instructor_id) VALUES
 (3, 2),
 (4, 3);
 """)
+
+conn.commit()
+cur.close()
+conn.close()
