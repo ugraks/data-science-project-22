@@ -13,7 +13,7 @@ def connect_db():
 def question_1_query():
     connection = connect_db()
     cursor = connection.cursor()
-    cursor.execute('SELECT * FROM students WHERE age > 22;')
+    cursor.execute('SELECT * FROM students WHERE age > 21;')
     data = cursor.fetchall()
     cursor.close()
     connection.close()
