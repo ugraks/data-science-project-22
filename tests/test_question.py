@@ -1,3 +1,4 @@
+from decimal import Decimal
 import pytest
 import sys
 import os
@@ -60,10 +61,14 @@ def test_question_9_query():
 
 def test_question_10_query():
     result = question_10_query()
-    assert all(isinstance(r[1], float) for r in result)
+    assert all(isinstance(r, tuple) and len(r) == 2 for r in result)
+    for _, avg_age in result:
+        assert isinstance(avg_age, (int, float, Decimal))
+        assert avg_age > 0 
 
 def test_question_11_query():
     result = question_11_query()
+    print(result)
     assert all(isinstance(r[2], int) for r in result)
 
 def test_question_12_query():

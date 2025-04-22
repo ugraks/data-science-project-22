@@ -4,16 +4,16 @@ def connect_db():
     conn = psycopg2.connect(
     host="localhost",
     port=5432,
-    database="testdb",
+    database="postgres",
     user="postgres",
-    password="postgres")
+    password="hello")
     return conn
 
 
 def question_1_query():
     connection = connect_db()
     cursor = connection.cursor()
-    cursor.execute('SELECT * FROM students WHERE age > 25;')
+    cursor.execute('SELECT * FROM students WHERE age > 22;')
     data = cursor.fetchall()
     cursor.close()
     connection.close()
