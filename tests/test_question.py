@@ -1,5 +1,5 @@
 import pytest
-from your_module_name import (  # kendi modül ismini buraya yaz
+from data.question import (  # kendi modül ismini buraya yaz
     question_1_query,
     question_2_query,
     question_3_query,
