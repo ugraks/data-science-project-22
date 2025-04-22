@@ -1,4 +1,8 @@
 import pytest
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from data.question import (  # kendi modül ismini buraya yaz
     question_1_query,
     question_2_query,
