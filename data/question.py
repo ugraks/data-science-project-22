@@ -4,9 +4,9 @@ def connect_db():
     conn = psycopg2.connect(
     host="localhost",
     port=5432,
-    database="testdb",
+    database="postgres",
     user="postgres",
-    password="postgres")
+    password="hello")
     return conn
 
 
