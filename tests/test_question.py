@@ -135,15 +135,15 @@ def run_tests():
     url = "https://edugen-backend-487d2168bc6c.herokuapp.com/projectLog/"
     payload = {
         "user_id": 34,
-        "project_id": 1,
+        "project_id": 2,
         "user_score": round(user_score, 2),
         "is_auto": False
     }
     headers = {
         "Content-Type": "application/json"
     }
-    response = send_post_request(url, payload, headers)
-    print(response)
+    send_post_request(url, payload, headers)
+    
 
 if __name__ == "__main__":
     run_tests()

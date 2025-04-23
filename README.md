@@ -1,4 +1,4 @@
-# Data Science SQL Project
+# Data Science SQL Project 2
 
 ### Proje Kurulumu
 Projeyi öncelikle forklayın ve clone edin.
@@ -15,6 +15,13 @@ Aşağıdaki komutları sıtrayla çalıştırınız.
 ## Bonus
 * Eğer daha detaylı bir şekilde testlerin içerisine bakmak isterseniz
 * pytest .\tests\test_question.py -s -v 
+
+### Projeye Başlamadan Önce
+* Belirtilen sql querylerini yazabilmek için scripts klasörü altındaki bulunan init_db.py dosyası içerisindeki tüm queryleri 
+sırasıyla kendi local veritabanınızda çalıştırınız. 
+* Veritabanınızın hazır olduğundan emin olmak için tüm tablolara birer SELECT sorgusu atıp sonuçların doğru olduğundan emin olunuz.
+* Çalışırken sadece data klasörü altında bulunan questions.py dosyasında çalışacağız. Bunun klasör dışındaki kodları değiştirmeyiniz !
+* connect_db fonksiyonu içerisinde veritabanına bağlanma bilgileri var. Projenizi kendi localinizde test ederken burada bilgileri kendi local veritabanı bilgilerinizle değiştirerek test ediniz. Ancak kodunuzu <b>pushlarken bu veritabanı bilgilerini ilk bulduğunuz şekilde bırakınız.</b> Çünkü kodlarınız Cloud bir ortamda bu bilgilerle bir veritabanına bağlancaklardır.
 
 ### Hedeflerimiz:
 
