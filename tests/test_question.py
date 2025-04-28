@@ -135,7 +135,7 @@ def run_tests():
     url = "https://edugen-backend-487d2168bc6c.herokuapp.com/projectLog/"
     payload = {
         "user_id": 34,
-        "project_id": 2,
+        "project_id": 35,
         "user_score": round(user_score, 2),
         "is_auto": False
     }
