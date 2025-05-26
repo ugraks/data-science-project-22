@@ -1,4 +1,4 @@
-# Data Science SQL Project 2
+# Data Science SQL Project - JOINS 
 
 ### Proje Kurulumu
 Projeyi öncelikle forklayın ve clone edin.
